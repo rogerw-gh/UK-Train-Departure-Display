@@ -2,6 +2,7 @@
   "journey": {
     "departureStation": "",
     "destinationStation": null,
+    "outOfHoursName": "",
     "stationAbbr": {
       "International": "Intl."
     }
