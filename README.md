@@ -54,6 +54,7 @@ Copy `config.sample.json` to `config.json` and complete.
     "journey": {
       "departureStation": "",
       "destinationStation": null,
+      "outOfHoursName": "",
       "stationAbbr": {
         "International": "Intl."
       }
@@ -81,6 +82,8 @@ Copy `config.sample.json` to `config.json` and complete.
 `departureStation` - the [short code](https://www.nationalrail.co.uk/stations_destinations/48541.aspx) for the starting station 
 
 `destinationStation` - the optional [short code](https://www.nationalrail.co.uk/stations_destinations/48541.aspx) for the destination station 
+
+`outOfHoursName` - the long name for the station display
 
 `stationAbbr` - a list of words and their abbreviations that can be used to shorten station names, useful for small displays. 
 
