@@ -202,15 +202,15 @@ def drawSignage(device, width, height, data):
     departures, firstDepartureDestinations, departureStation = data
 
     with canvas(device) as draw:
-        w, h = draw.textsize(callingAt, font)
+        w, h = draw.textlength(callingAt, font)
 
     callingWidth = w
     width = virtualViewport.width
 
     # First measure the text size
     with canvas(device) as draw:
-        w, h = draw.textsize(status, font)
-        pw, ph = draw.textsize("Plat 88", font)
+        w, h = draw.textlength(status, font)
+        pw, ph = draw.textlength("Plat 88", font)
 
     rowOneA = snapshot(
         width - w - pw, 10, renderDestination(departures[0], fontBold), interval=10)
