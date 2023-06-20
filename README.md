@@ -142,4 +142,4 @@ The fonts used were painstakingly put together by `DanielHartUK` and can be foun
 ## Big thanks and a new case in return
 
 To the originators and those who developed the original code, Pillow10 will stop the old code working.
-I have also added all my design collateral for a station display that looks (vaguely) like a platform sign with ramps at each end.  Use a regular USB cable, cut off the end that normally goes into the Pi and strip enough outer sheath to run the power cables up the legs of the display. Solder the power leads to the back of the Pi.
+I have also added all my design collateral for a station display that looks (vaguely) like a platform sign with ramps at each end.  Use a regular USB cable, cut off the end that normally goes into the Pi and strip enough outer sheath to run the power cables up the legs of the display. Solder the power leads to the back of the Pi.  Tested with PIL V9.5.0, Python 3.7.3
