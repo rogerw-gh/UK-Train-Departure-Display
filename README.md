@@ -138,3 +138,8 @@ Chris Hutchinson tweeted a video demo of the original software running on a real
 A big thanks to Chris Hutchinson who originally built this code! He can be found on GitHub at https://github.com/chrishutchinson/
 
 The fonts used were painstakingly put together by `DanielHartUK` and can be found on GitHub at https://github.com/DanielHartUK/Dot-Matrix-Typeface - A huge thanks for making that resource available!
+
+## Big thanks and a new case in return
+
+To the originators and those who developed the original code, Pillow10 will stop the old code working.
+I have also added all my design collateral for a station display that looks (vaguely) like a platform sign with ramps at each end.  Use a regular USB cable, cut off the end that normally goes into the Pi and strip enough outer sheath to run the power cables up the legs of the display. Solder the power leads to the back of the Pi.
