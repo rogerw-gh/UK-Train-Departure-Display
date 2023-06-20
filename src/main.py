@@ -96,17 +96,18 @@ def renderTime(draw, width, height):
 
     #w1, h1 = draw.textlength("{}:{}".format(hour, minute), fontBoldLarge)
     #w2, h2 = draw.textlength(":00", fontBoldTall)
-    w1 = draw.textlength("{}:{}".format(hour, minute), fontBoldLarge)
-    w2 = draw.textlength(":00", fontBoldTall)
+    w1 = int(draw.textlength("{}:{}".format(hour, minute), fontBoldLarge))
+    w2 = int(draw.textlength(":00", fontBoldTall))
     l1, t1, r1, b1 = draw.textbbox((0,0),"{}:{}".format(hour, minute), fontBoldLarge)
     l2, t2, r2, b2 = draw.textbbox((0,0),":00", fontBoldTall)
     width1, height1 = r1 - l1, b1 - t1
     width2, height2 = r2 - l2, b2 - t2
+    width3 = int(widgetWdith/2 - (w1 + w2)/2)
 
 
-    draw.text(((width1 - w1 - w2) / 2, 0), text="{}:{}".format(hour, minute),
+    draw.text((width3, 0), text="{}:{}".format(hour, minute),
               font=fontBoldLarge, fill="yellow")
-    draw.text((((width2 - w1 -w2) / 2) + width1, 5), text=":{}".format(second),
+    draw.text((width3 + width1, 5), text=":{}".format(second),
               font=fontBoldTall, fill="yellow")
 
 
