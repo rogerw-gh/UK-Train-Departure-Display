@@ -1,6 +1,7 @@
 //amendments by rogerw-gh to fix issues and make assembly simpler
 // add new components - separate legs, platform surfaces
 // increased depth of back volume, changed holes
+// add stiffening ribs to back
 
 //Choose a pattern for the ventilated back
 perforations = 4;// [1:squares,2:circles,3:hexagons,4:diagonal slots]
@@ -25,7 +26,7 @@ third_row_y = 24;
 screw_hole_x = 4;
 screw_hole_y = 3;
 screw_hole_dia = 2.5+pa;
-head_hole_dia = 4.5;
+head_hole_dia = 4.7;
 bolt_round = 40;
 
 //translate ([-diff_x,-diff_y,1.99]) cube ([front_x,front_y,back_z]);
@@ -62,7 +63,8 @@ module new_back () {
 }//end module
 
 module internal_recess () {
-      translate ([9,-0.5,-0.01]) cube ([back_x-18,back_y+1,back_z-0.01]);
+    //stiffening ribs
+      translate ([9,1.5,-0.01]) cube ([back_x-18,back_y-5,back_z-0.01]);
 }//end module
 
 module drill_screw_holes () {
