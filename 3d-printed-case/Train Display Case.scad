@@ -63,7 +63,7 @@ module new_frame () {
         //slot
         translate ([1,8,-cd]) cube([6,20,12+cd]);
         //extend slot horizontally to enable fit of electronics
-        translate ([2,15,0]) cube([30,8,10]);
+        translate ([2,15,0]) cube([35,8,10]);
         //slot tidy up
         translate ([1,8,-cd]) cube([10,20,6.5+cd]);
         //holes 
